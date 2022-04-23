@@ -1,0 +1,25 @@
+{
+  "name": "zencode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx tailwindcss -i ./src/input.css -o ./dist/css/output.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/css/output.css ",
+    "alpine": "npx esbuild src/script.js --outfile=dist/js/alpine.js --bundle",
+    "updatejs": "npx esbuild src/script.js --outfile=dist/js/alpine.js --bundle --watch",
+    "dev-mini": "npx esbuild src/script.js--outfile=dist/js/alpine.js --bundle --minify",
+    "clean": "npx prettier --write src index.html",
+    "check": "npx prettier --check src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "alpinejs": "^3.10.1",
+    "esbuild": "^0.14.36",
+    "prettier": "^2.6.2",
+    "prettier-plugin-tailwindcss": "^0.1.9",
+    "tailwindcss": "^3.0.24"
+  }
+}

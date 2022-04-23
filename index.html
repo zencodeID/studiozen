@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="/dist/css/output.css" rel="stylesheet" />
+	<link rel="stylesheet" href="dist/css/swiper-bundle.min.css" />
+</head>
+
+<body>
+	<header>
+		<nav class="fixed z-20 w-full">
+			<div class="container m-auto px-6 md:px-12 lg:px-6">
+				<div class="flex flex-wrap items-center justify-between gap-6 py-6 md:gap-0 md:py-4">
+					<div class="flex w-full justify-between lg:w-auto">
+						<a href="#" aria-label="logo">
+							<img src="dist/img/logo.svg" class="w-36" alt="tailus logo" width="144" height="48" />
+						</a>
+
+						<button aria-label="humburger" id="hamburger" class="relative -mr-2 h-10 w-10 lg:hidden">
+							<div aria-hidden="true" id="line"
+								class="transtion inset-0 m-auto h-0.5 w-6 rounded bg-white duration-300"></div>
+							<div aria-hidden="true" id="line2"
+								class="transtion inset-0 m-auto mt-2 h-0.5 w-6 rounded bg-white duration-300"></div>
+						</button>
+					</div>
+
+					<div hidden class="w-full bg-white md:flex-nowrap md:space-y-0 md:bg-transparent md:p-0 lg:flex lg:w-auto">
+						<div class="block w-full lg:flex lg:items-center">
+							<ul
+								class="space-y-6 pb-6 font-medium tracking-wide text-gray-100 lg:flex lg:items-center lg:space-y-0 lg:pb-0 lg:pr-6">
+								<li>
+									<a href="#" class="block md:px-3">
+										<span>Product</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="block md:px-3">
+										<span>Use Cases</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="block md:px-3">
+										<span>Integrations</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="block md:px-3">
+										<span>Pricing</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="block md:px-3">
+										<span>Blog</span>
+									</a>
+								</li>
+							</ul>
+
+							<ul
+								class="space-y-2 border-t pt-2 lg:flex lg:items-center lg:space-y-0 lg:space-x-2 lg:border-t-0 lg:border-l lg:pt-0 lg:pl-2">
+								<li>
+									<button type="button" title="Start buying"
+										class="w-full rounded-md border border-transparent py-3 px-6 text-center transition active:border-purple-400 sm:w-max">
+										<span class="block font-semibold text-white">
+											Login
+										</span>
+									</button>
+								</li>
+
+								<li>
+									<button type="button" title="Start buying"
+										class="w-full rounded-lg bg-white py-3 px-6 text-center transition focus:bg-purple-100 active:bg-purple-200 sm:w-max">
+										<span class="block text-sm font-semibold text-purple-600">
+											Sign In
+										</span>
+									</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="relative">
+		<img class="absolute inset-0 h-full w-full object-cover object-top" src="dist/img/background2.webp" alt="" />
+		<div aria-hidden="true" class="absolute inset-0 h-full w-full bg-purple-900 bg-opacity-30 backdrop-blur-sm"></div>
+		<div class="container relative m-auto px-6 md:px-12 lg:px-6">
+			<div class="mb-12 space-y-16 pt-40 md:mb-20 md:pt-56 lg:mx-auto lg:w-8/12">
+				<h1 class="text-center text-3xl font-bold text-white sm:text-4xl md:text-5xl">
+					Don't look again for your next freelance projects, you got them.
+				</h1>
+
+				<form action="" class="w-full">
+					<div class="relative flex rounded-xl bg-white p-1 shadow-2xl md:p-2">
+						<select class="hidden rounded-xl bg-transparent p-3 md:block md:p-4" name="domain" id="domain">
+							<option value="design">Design</option>
+							<option value="development">Development</option>
+							<option value="marketing">Marketing</option>
+						</select>
+						<input placeholder="Your favorite position" class="w-full p-4" type="text" />
+						<button type="button" title="Start buying"
+							class="ml-auto rounded-lg bg-gradient-to-br from-pink-500 to-purple-500 py-3 px-6 text-center transition hover:to-purple-600 focus:from-pink-600 active:from-pink-700 md:px-12">
+							<span class="hidden font-semibold text-white md:block">
+								Search
+							</span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="mx-auto w-5 text-white md:hidden" fill="currentColor"
+								class="bi bi-search" viewBox="0 0 16 16">
+								<path
+									d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+							</svg>
+						</button>
+					</div>
+				</form>
+			</div>
+
+			<div class="pb-16">
+				<div class="md:px-12">
+					<span class="block text-center font-medium text-pink-50">Trusted by your favorite giants</span>
+
+					<div class="-mx-6 mt-8 overflow-x-auto px-6 md:overflow-x-hidden">
+						<div class="flex w-max flex-wrap items-center justify-center gap-4 md:w-auto md:gap-6 lg:gap-8">
+							<div class="flex items-center">
+								<img class="w-36 brightness-200 contrast-200 grayscale" src="dist/img/microsoft.png" alt="client logo"
+									loading="lazy" width="584" height="122" />
+							</div>
+							<div class="flex items-center">
+								<img class="w-28 brightness-200 contrast-200 grayscale" src="dist/img/grabyo.png" alt="client logo"
+									loading="lazy" width="400" height="219" />
+							</div>
+							<div class="flex items-center">
+								<img class="w-32 brightness-200 contrast-200 grayscale" src="dist/img/lifegroups.png" alt="client logo"
+									loading="lazy" width="400" height="219" />
+							</div>
+							<div class="flex items-center">
+								<img class="w-24 brightness-200 contrast-200 grayscale" src="dist/img/lilly.png" alt="client logo"
+									loading="lazy" width="400" height="219" />
+							</div>
+							<div class="flex items-center">
+								<img class="w-28 brightness-200 contrast-200 grayscale" src="dist/img/grabyo.png" alt="client logo"
+									loading="lazy" width="400" height="219" />
+							</div>
+							<div class="flex items-center">
+								<img class="w-32 brightness-200 contrast-200 grayscale" src="dist/img/lifegroups.png" alt="client logo"
+									loading="lazy" width="400" height="219" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- akhir navbar/hero -->
+
+	<div class="relative bg-white py-16">
+		<div class="container relative m-auto px-6 text-gray-500 md:px-12">
+			<div class="grid gap-6 md:mx-auto md:w-8/12 lg:w-full lg:grid-cols-3">
+				<div class="group space-y-6 rounded-xl bg-white px-8 py-12 text-center shadow-xl">
+					<img class="mx-auto w-24" src="dist/img/code.png" alt="illustration" loading="lazy" />
+					<h3 class="text-2xl font-semibold text-gray-800">
+						Web development
+					</h3>
+					<p>
+						Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at
+						cum, consectetur ullam tempora ipsa iste officia sed officiis!
+						Incidunt ea animi officiis.
+					</p>
+					<a href="#"
+						class="relative mx-auto flex h-10 w-10 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:transition before:duration-300 group-hover:before:scale-125">
+						<span class="text-gray-700">&rightarrow;</span>
+					</a>
+				</div>
+				<div class="group space-y-6 rounded-xl bg-white px-8 py-12 text-center shadow-xl">
+					<img class="mx-auto w-24" src="dist/img/magic.png" alt="illustration" loading="lazy" />
+					<h3 class="text-2xl font-semibold text-gray-800">Seo</h3>
+					<p>
+						Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at
+						cum, consectetur ullam tempora ipsa iste officia sed officiis!
+						Incidunt ea animi officiis.
+					</p>
+
+					<a href="#"
+						class="relative mx-auto flex h-10 w-10 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:transition before:duration-300 group-hover:before:scale-125">
+						<span class="text-gray-700">&rightarrow;</span>
+					</a>
+				</div>
+				<div class="group space-y-6 rounded-xl bg-white px-8 py-12 text-center shadow-xl">
+					<img class="mx-auto w-24" src="dist/img/graphic.webp" alt="illustration" loading="lazy" />
+					<h3 class="text-2xl font-semibold text-gray-800">Web Design</h3>
+					<p>
+						Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at
+						cum, consectetur ullam tempora ipsa iste officia sed officiis!
+						Incidunt ea animi officiis.
+					</p>
+					<a href="#"
+						class="relative mx-auto flex h-10 w-10 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:transition before:duration-300 group-hover:before:scale-125">
+						<span class="text-gray-700">&rightarrow;</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- akhir service -->
+	<!-- awal client -->
+
+	<div class="bg-gray-50 py-16">
+		<div class="container m-auto space-y-8 px-6 text-gray-500 md:px-12 lg:px-40">
+			<div class="mb-8">
+				<h6 class="text-lg² text-center font-bold text-cyan-500">
+					Trusted by +5 giants
+				</h6>
+			</div>
+			<div class="scrollbar-transparent overflow-x-auto lg:overflow-hidden">
+				<div class="-mx-6 flex space-x-6 px-6 md:space-x-12 lg:justify-between">
+					<img src="dist/img/airbnb.svg" loading="lazy" class="grayscale transition hover:grayscale-0" alt="logo" />
+					<img src="dist/img/tailus.svg" loading="lazy" class="w-36 grayscale transition hover:grayscale-0"
+						alt="logo" />
+					<img src="dist/img/ge.svg" loading="lazy" class="grayscale transition hover:grayscale-0" alt="logo" />
+					<img src="dist/img/coty.svg" loading="lazy" class="grayscale transition hover:grayscale-0" alt="logo" />
+					<img src="dist/img/microsoft.svg" loading="lazy" class="grayscale transition hover:grayscale-0" alt="logo" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- akhir clients -->
+	<!-- awal content 1 -->
+
+	<div class="bg-gradient-to-br from-blue-50 to-blue-100 py-16">
+		<div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+			<div class="space-y-6 md:flex md:gap-6 md:space-y-0 lg:items-center lg:gap-12">
+				<div class="md:7/12 space-y-6 lg:w-6/12">
+					<h2 class="text-2xl font-bold text-blue-900 md:text-5xl">
+						Nuxt development is carried out by passionate developers.
+					</h2>
+					<div class="space-y-4">
+						<p class="text-gray-600">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+							omnis voluptatem accusantium nemo perspiciatis delectus atque
+							autem! Voluptatum tenetur beatae unde aperiam, repellat expedita
+							consequatur! Officiis id consequatur atque doloremque!
+						</p>
+						<p class="mt-4 text-gray-600">
+							Nobis minus voluptatibus pariatur dignissimos libero quaerat
+							iure expedita at? Asperiores nemo possimus nesciunt dicta veniam
+							aspernatur quam mollitia.
+						</p>
+					</div>
+					<a href="#"
+						class="block w-full rounded-full bg-blue-200 py-3 px-6 text-center transition hover:bg-blue-100 focus:bg-blue-100 active:bg-blue-300 sm:w-max">
+						<span class="block text-sm font-semibold text-blue-900">
+							Learn More
+						</span>
+					</a>
+				</div>
+				<div class="md:5/12 lg:w-6/12">
+					<img src="dist/img/boost.png" alt="image" loading="lazy" width="" height="" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- akhir content 1 -->
+	<!-- awal content 2 -->
+
+	<div class="bg-white py-16">
+		<div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+			<div class="space-y-6 md:flex md:gap-6 md:space-y-0 lg:items-center lg:gap-12">
+				<div class="md:5/12 lg:w-5/12">
+					<img src="dist/img/startup.png" alt="image" loading="lazy" width="" height="" />
+				</div>
+				<div class="md:7/12 lg:w-6/12">
+					<h2 class="text-2xl font-bold text-gray-900 md:text-4xl">
+						Nuxt development is carried out by passionate developers
+					</h2>
+					<p class="mt-6 text-gray-600">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+						omnis voluptatem accusantium nemo perspiciatis delectus atque
+						autem! Voluptatum tenetur beatae unde aperiam, repellat expedita
+						consequatur! Officiis id consequatur atque doloremque!
+					</p>
+					<p class="mt-4 text-gray-600">
+						Nobis minus voluptatibus pariatur dignissimos libero quaerat iure
+						expedita at? Asperiores nemo possimus nesciunt dicta veniam
+						aspernatur quam mollitia.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- akhir content 2 -->
+	<!--awal Team -->
+
+	<div class="bg-gray-50 py-20">
+		<div class="container mx-auto px-6 md:px-12">
+			<div class="mb-16 text-center">
+				<h2 class="mb-4 text-center text-2xl font-bold text-gray-900 md:text-4xl">
+					Tailus blocks leadership
+				</h2>
+				<p class="text-gray-600 lg:mx-auto lg:w-8/12">
+					Tailus prides itself not only on award-winning technology, but also
+					on the talent of its people of some of the brightest minds and most
+					experienced executives in business.
+				</p>
+			</div>
+			<div class="grid gap-24 md:grid-cols-3 md:gap-12">
+				<div class="group space-y-4 text-center">
+					<div class="mx-auto h-56 w-56 rotate-45 overflow-hidden rounded-[4rem] md:h-40 md:w-40 lg:h-56 lg:w-56">
+						<img
+							class="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
+							src="dist/img/woman.jpg" alt="woman" loading="lazy" width="640" height="805" />
+					</div>
+					<div class="pt-4">
+						<h4 class="text-2xl">Hentoni Doe</h4>
+						<span class="block text-sm text-gray-500">CEO-Founder</span>
+					</div>
+					<div class="flex justify-center space-x-4 text-gray-500">
+						<a href="#" target="_blank" aria-label="facebook">
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-6 hover:text-blue-600" fill="currentColor"
+								class="bi bi-facebook" viewBox="0 0 16 16">
+								<path
+									d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+							</svg>
+						</a>
+						<a href="#" target="_blank" aria-label="instagram">
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-6 hover:text-blue-600" fill="currentColor"
+								class="bi bi-instagram" viewBox="0 0 16 16">
+								<path
+									d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+							</svg>
+						</a>
+						<a href="#" target="_blank" aria-label="instagram">
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-6 hover:text-blue-600" fill="currentColor"
+								class="bi bi-twitter" viewBox="0 0 16 16">
+								<path
+									d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+							</svg>
+						</a>
+						<a href="#" target="_blank" aria-label="instagram">
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-6 hover:text-blue-600" fill="currentColor"
+								class="bi bi-linkedin" viewBox="0 0 16 16">
+								<path
+									d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="group space-y-4 text-center">
+					<div class="mx-auto h-56 w-56 rotate-45 overflow-hidden rounded-[4rem] md:h-40 md:w-40 lg:h-56 lg:w-56">
+						<img
+							class="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
+							src="dist/img/man.jpg" alt="man" loading="lazy" width="1000" height="667" />
+					</div>
+					<div class="pt-4">
+						<h4 class="text-2xl">Dan Orton</h4>
+						<span class="block text-sm text-gray-500">Designer</span>
+					</div>
+					<div class="flex justify-center space-x-4 text-gray-500">
+						<a href="#" target="_blank" aria-label="facebook">
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-6 hover:text-blue-600" fill="currentColor"
+								class="bi bi-facebook" viewBox="0 0 16 16">
+								<path
+									d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+							</svg>
+						</a>
+						<a href="#" target="_blank" aria-label="instagram">
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-6 hover:text-blue-600" fill="currentColor"
+								class="bi bi-instagram" viewBox="0 0 16 16">
+								<path
+									d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+							</svg>
+						</a>
+						<a href="#" target="_blank" aria-label="instagram">
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-6 hover:text-blue-600" fill="currentColor"
+								class="bi bi-twitter" viewBox="0 0 16 16">
+								<path
+									d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+							</svg>
+						</a>
+						<a href="#" target="_blank" aria-label="instagram">
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-6 hover:text-blue-600" fill="currentColor"
+								class="bi bi-linkedin" viewBox="0 0 16 16">
+								<path
+									d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="group space-y-4 text-center">
+					<div class="mx-auto h-56 w-56 rotate-45 overflow-hidden rounded-[4rem] md:h-40 md:w-40 lg:h-56 lg:w-56">
+						<img
+							class="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
+							src="dist/img/woman1.jpg" alt="woman" loading="lazy" width="640" height="805" />
+					</div>
+					<div class="pt-4">
+						<h4 class="text-2xl">Ortance Doe</h4>
+						<span class="block text-sm text-gray-500">Marketing</span>
+					</div>
+					<div class="flex justify-center space-x-4 text-gray-500">
+						<a href="#" target="_blank" aria-label="facebook">
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-6 hover:text-blue-600" fill="currentColor"
+								class="bi bi-facebook" viewBox="0 0 16 16">
+								<path
+									d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+							</svg>
+						</a>
+						<a href="#" target="_blank" aria-label="instagram">
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-6 hover:text-blue-600" fill="currentColor"
+								class="bi bi-instagram" viewBox="0 0 16 16">
+								<path
+									d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+							</svg>
+						</a>
+						<a href="#" target="_blank" aria-label="instagram">
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-6 hover:text-blue-600" fill="currentColor"
+								class="bi bi-twitter" viewBox="0 0 16 16">
+								<path
+									d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+							</svg>
+						</a>
+						<a href="#" target="_blank" aria-label="instagram">
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-6 hover:text-blue-600" fill="currentColor"
+								class="bi bi-linkedin" viewBox="0 0 16 16">
+								<path
+									d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- akhir team -->
+	<!-- awal team2 -->
+
+	<div class="bg-white py-20">
+		<div class="container mx-auto px-6 text-center md:px-12">
+			<div class="mb-16">
+				<h2 class="mb-4 text-center text-2xl font-bold text-gray-900 md:text-4xl">
+					Tailus blocks leadership
+				</h2>
+				<p class="text-gray-600 lg:mx-auto lg:w-8/12">
+					Tailus prides itself not only on award-winning technology, but also
+					on the talent of its people of some of the brightest minds and most
+					experienced executives in business.
+				</p>
+			</div>
+			<div class="grid gap-28 py-20 md:grid-cols-3 md:gap-12">
+				<div class="group space-y-8 border-t-4">
+					<div class="mx-auto -mt-16 h-32 w-32 rotate-45 overflow-hidden rounded-[2rem]">
+						<img
+							class="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
+							src="dist/img/woman1.jpg" alt="woman" loading="lazy" width="640" height="805" />
+					</div>
+					<div class="space-y-4 text-center">
+						<div>
+							<h4 class="text-2xl">Hentoni Doe</h4>
+							<span class="block text-sm text-gray-500">CEO-Founder</span>
+						</div>
+						<a href="#" class="mx-auto block w-max text-blue-600">View Bio</a>
+					</div>
+				</div>
+
+				<div class="group space-y-8 border-t-4">
+					<div class="mx-auto -mt-16 h-32 w-32 rotate-45 overflow-hidden rounded-[2rem]">
+						<img
+							class="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
+							src="dist/img/woman.jpg" alt="woman" loading="lazy" width="1000" height="667" />
+					</div>
+					<div class="space-y-4 text-center">
+						<div>
+							<h4 class="text-2xl">Anabelle Doe</h4>
+							<span class="block text-sm text-gray-500">Chief Operations Officer</span>
+						</div>
+						<a href="#" class="mx-auto block w-max text-blue-600">View Bio</a>
+					</div>
+				</div>
+
+				<div class="group space-y-8 border-t-4">
+					<div class="mx-auto -mt-16 h-32 w-32 rotate-45 overflow-hidden rounded-[2rem]">
+						<img
+							class="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
+							src="dist/img/man.jpg" alt="man" loading="lazy" width="1000" height="667" />
+					</div>
+					<div class="space-y-4 text-center">
+						<div>
+							<h4 class="text-2xl">Jonathan Doe</h4>
+							<span class="block text-sm text-gray-500">Chief Technical Officer</span>
+						</div>
+						<a href="#" class="mx-auto block w-max text-blue-600">View Bio</a>
+					</div>
+				</div>
+			</div>
+			<button type="button" title="Start buying"
+				class="mx-auto w-max rounded-full border border-blue-200 py-3 px-6 text-center transition focus:bg-blue-100 active:bg-blue-200">
+				<span class="block text-sm font-semibold text-blue-600">
+					Load more...
+				</span>
+			</button>
+		</div>
+	</div>
+	<!-- akhir team2 -->
+	<!-- awal blog -->
+
+	<div class="bg-gradient-to-br from-yellow-50 to-red-100 py-16">
+		<div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+			<div class="mb-12 space-y-2 text-center">
+				<span
+					class="mx-auto block w-max rounded-full border border-yellow-200 bg-yellow-100 px-3 py-1.5 text-yellow-700">Blog</span>
+				<h2 class="text-2xl font-bold text-yellow-900 md:text-4xl">
+					Sharing is Caring
+				</h2>
+				<p class="lg:mx-auto lg:w-6/12">
+					Quam hic dolore cumque voluptate rerum beatae et quae, tempore sunt,
+					debitis dolorum officia aliquid explicabo? Excepturi, voluptate?
+				</p>
+			</div>
+
+			<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+				<div class="group relative rounded-xl bg-white bg-opacity-50 p-1 pb-16 shadow-xl hover:rounded-2xl">
+					<div class="relative">
+						<div aria-hidden="true"
+							class="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-b from-transparent to-yellow-50"></div>
+						<img src="dist/img/woman.jpg" alt="art cover" loading="lazy" width="1000" height="667"
+							class="h-64 w-full rounded-t-lg object-cover object-top transition duration-500 group-hover:rounded-t-xl" />
+					</div>
+					<div class="relative -mt-20 space-y-4 p-4">
+						<h4 class="text-2xl font-semibold text-yellow-900">
+							De fuga fugiat lorem ispum laboriosam expedita.
+						</h4>
+						<p class="text-gray-600">
+							Voluptates harum aliquam totam, doloribus eum impedit atque!
+							Temporibus...
+						</p>
+					</div>
+					<a href="#" class="absolute inset-x-4 bottom-4 flex items-center space-x-2">
+						<div aria-hidden="true" class="flex h-10 w-10 rounded-full border border-yellow-200">
+							<svg aria-hidden="true" width="24" height="24" fill="none"
+								class="my-auto mx-auto flex-none text-yellow-700">
+								<path d="M10.75 8.75l3.5 3.25-3.5 3.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+									stroke-linejoin="round"></path>
+							</svg>
+						</div>
+						<span class="text-yellow-600">Read more</span>
+					</a>
+				</div>
+				<div class="group relative rounded-xl bg-white bg-opacity-50 p-1 pb-16 shadow-xl hover:rounded-2xl">
+					<div class="relative">
+						<div aria-hidden="true"
+							class="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-b from-transparent to-yellow-50"></div>
+						<img src="dist/img/woman1.jpg" alt="art cover" loading="lazy" width="1000" height="667"
+							class="h-64 w-full rounded-t-lg object-cover object-top transition duration-500 group-hover:rounded-t-xl" />
+					</div>
+					<div class="relative -mt-20 space-y-4 p-4">
+						<h4 class="text-2xl font-semibold text-yellow-900">
+							lorem ispum laboriosam expedita.
+						</h4>
+						<p class="text-gray-600">
+							Voluptates harum aliquam totam, doloribus eum impedit atque!
+							Temporibus...
+						</p>
+					</div>
+					<a href="#" class="absolute inset-x-4 bottom-4 flex items-center space-x-2">
+						<div aria-hidden="true" class="flex h-10 w-10 rounded-full border border-yellow-200">
+							<svg aria-hidden="true" width="24" height="24" fill="none"
+								class="my-auto mx-auto flex-none text-yellow-700">
+								<path d="M10.75 8.75l3.5 3.25-3.5 3.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+									stroke-linejoin="round"></path>
+							</svg>
+						</div>
+						<span class="text-yellow-600">Read more</span>
+					</a>
+				</div>
+				<div class="group relative rounded-xl bg-white bg-opacity-50 p-1 pb-16 shadow-xl hover:rounded-2xl">
+					<div class="relative">
+						<div aria-hidden="true"
+							class="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-b from-transparent to-yellow-50"></div>
+						<img src="dist/img/man.jpg" alt="art cover" loading="lazy" width="1000" height="667"
+							class="h-64 w-full rounded-t-lg object-cover object-top transition duration-500 group-hover:rounded-t-xl" />
+					</div>
+					<div class="relative -mt-20 space-y-4 p-4">
+						<h4 class="text-2xl font-semibold text-yellow-900">
+							De fuga fugiat lorem ispum laboriosam expedita.
+						</h4>
+						<p class="text-gray-600">
+							Voluptates harum aliquam totam, doloribus eum impedit atque!
+							Temporibus...
+						</p>
+					</div>
+					<a href="#" class="absolute inset-x-4 bottom-4 flex items-center space-x-2">
+						<div aria-hidden="true" class="flex h-10 w-10 rounded-full border border-yellow-200">
+							<svg aria-hidden="true" width="24" height="24" fill="none"
+								class="my-auto mx-auto flex-none text-yellow-700">
+								<path d="M10.75 8.75l3.5 3.25-3.5 3.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+									stroke-linejoin="round"></path>
+							</svg>
+						</div>
+						<span class="text-yellow-600">Read more</span>
+					</a>
+				</div>
+				<div class="group relative rounded-xl bg-white bg-opacity-50 p-1 pb-16 shadow-xl hover:rounded-2xl">
+					<div class="relative">
+						<div aria-hidden="true"
+							class="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-b from-transparent to-yellow-50"></div>
+						<img src="dist/img/woman1.jpg" alt="art cover" loading="lazy" width="1000" height="667"
+							class="h-64 w-full rounded-t-lg object-cover transition duration-500 group-hover:rounded-t-xl" />
+					</div>
+					<div class="relative -mt-20 space-y-4 p-4">
+						<h4 class="text-2xl font-semibold text-yellow-900">
+							lorem ispum laboriosam expedita.
+						</h4>
+						<p class="text-gray-600">
+							Voluptates harum aliquam totam, doloribus eum impedit atque!
+							Temporibus...
+						</p>
+					</div>
+					<a href="#" class="absolute inset-x-4 bottom-4 flex items-center space-x-2">
+						<div aria-hidden="true" class="flex h-10 w-10 rounded-full border border-yellow-200">
+							<svg aria-hidden="true" width="24" height="24" fill="none"
+								class="my-auto mx-auto flex-none text-yellow-700">
+								<path d="M10.75 8.75l3.5 3.25-3.5 3.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+									stroke-linejoin="round"></path>
+							</svg>
+						</div>
+						<span class="text-yellow-600">Read more</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- akhir blog -->
+	<!-- CTA -->
+
+	<div class="bg-green-50 py-16">
+		<div class="container m-auto space-y-8 px-6 md:px-12 lg:px-20">
+			<div class="items-center justify-center gap-16 text-center md:flex md:text-left">
+				<div class="order-last mb-6 space-y-6 md:mb-0 md:w-7/12 lg:w-6/12">
+					<h1 class="text-4xl font-bold text-green-900 md:text-5xl">
+						Download it now
+					</h1>
+					<p class="text-lg text-gray-600">
+						Be part of millions people around the world using tailus in modern
+						User Interfaces.
+					</p>
+					<div class="flex flex-wrap justify-center gap-4 md:justify-start lg:gap-6">
+						<a href="#" target="blank" title="For Android" aria-label="google play" class="block overflow-hidden">
+							<img src="dist/img/google_play.png" width="153" height="46" alt="google play badge" />
+						</a>
+						<a href="#" target="blank" title="For iPhone" aria-label="app store" class="block overflow-hidden">
+							<img src="dist/img/app-store.png" width="153" height="46" alt="apple store badge" />
+						</a>
+					</div>
+				</div>
+				<img src="dist/img/mobility_illustration.webp" width="832" height="608" class="m-auto md:w-5/12" loading="lazy"
+					alt="mobility_illustration" />
+			</div>
+		</div>
+	</div>
+	<!-- Akhir CTA -->
+	<!-- Awal Testimoni -->
+
+	<div class="white py-16">
+		<div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+			<h2 class="mb-12 text-center text-2xl font-bold text-gray-900 md:text-4xl">
+				What's our customers say
+			</h2>
+			<div class="grid gap-8 md:grid-rows-2 lg:grid-cols-2">
+				<div class="row-span-2 rounded-xl border border-gray-100 bg-gray-50 p-6 text-center sm:p-8">
+					<div class="flex h-full flex-col justify-center space-y-4">
+						<img class="mx-auto h-20 w-20 rounded-full" src="dist/img/second_user.webp" alt="user avatar" height="220"
+							width="220" loading="lazy" />
+						<p class="text-gray-600 md:text-xl">
+							<span class="font-serif">"</span> Lorem ipsum dolor sit amet
+							consectetur adipisicing elit. Quaerat repellat perspiciatis
+							excepturi est. Non ipsum iusto aliquam consequatur repellat
+							provident, omnis ut, sapiente voluptates veritatis cum deleniti
+							repudiandae ad doloribus. <span class="font-serif">"</span>
+						</p>
+						<div>
+							<h6 class="text-lg font-semibold leading-none">Jane Doe</h6>
+							<span class="text-xs text-gray-500">Product Designer</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="rounded-xl border border-gray-100 bg-gray-50 p-6 sm:flex sm:space-x-8 sm:p-8">
+					<img class="mx-auto h-20 w-20 rounded-full" src="dist/img/first_user.webp" alt="user avatar" height="220"
+						width="220" loading="lazy" />
+					<div class="mt-4 space-y-4 text-center sm:mt-0 sm:text-left">
+						<p class="text-gray-600">
+							<span class="font-serif">"</span> Lorem ipsum dolor sit amet
+							consectetur adipisicing elit. Quaerat repellat perspiciatis
+							excepturi est. Non ipsum iusto aliquam consequatur repellat
+							provident, omnis ut, sapiente voluptates veritatis cum deleniti
+							repudiandae ad doloribus. <span class="font-serif">"</span>
+						</p>
+						<div>
+							<h6 class="text-lg font-semibold leading-none">Jane Doe</h6>
+							<span class="text-xs text-gray-500">Product Designer</span>
+						</div>
+					</div>
+				</div>
+				<div class="rounded-xl border border-gray-100 bg-gray-50 p-6 sm:flex sm:space-x-8 sm:p-8">
+					<img class="mx-auto h-20 w-20 rounded-full" src="dist/img/third_user.webp" alt="user avatar" height="220"
+						width="220" loading="lazy" />
+					<div class="mt-4 space-y-4 text-center sm:mt-0 sm:text-left">
+						<p class="text-gray-600">
+							<span class="font-serif">"</span> Lorem ipsum dolor sit amet
+							consectetur adipisicing elit. Quaerat repellat perspiciatis
+							excepturi est. Non ipsum iusto aliquam consequatur repellat
+							provident, omnis ut, sapiente voluptates veritatis cum deleniti
+							repudiandae ad doloribus. <span class="font-serif">"</span>
+						</p>
+						<div>
+							<h6 class="text-lg font-semibold leading-none">Jane Doe</h6>
+							<span class="text-xs text-gray-500">Product Designer</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Akhir Testimoni -->
+	<!-- comment 1 -->
+
+	<!-- require JavaScript for carousel to work 
+     eg : https://swiperjs.com/
+-->>
+
+	<div class="bg-gray-50 py-16">
+		<div class="container m-auto text-gray-600 md:px-12 xl:px-6">
+			<div class="mb-12 space-y-4 px-6 md:px-0">
+				<h2 class="text-center text-2xl font-bold text-gray-900 md:text-4xl">
+					We have some fans.
+				</h2>
+				<p class="text-center">
+					We don't like to brag, but we don't mind letting our customers do it
+					for us. <br />
+					Here are a few nice things folks have said about our themes over the
+					years.
+				</p>
+			</div>
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper pb-8">
+					<div class="swiper-slide !bg-transparent px-6 md:px-0">
+						<div class="rounded-xl bg-white shadow-xl md:mx-auto lg:w-7/12">
+							<div class="grid md:grid-cols-2">
+								<img src="dist/img/card.webp"
+									class="h-full w-full rounded-t-xl object-cover md:rounded-l-xl md:rounded-tr-none" alt="image"
+									width="640" height="422" loading="lazy" />
+								<div class="mx-auto space-y-6 p-6 text-center sm:p-8">
+									<div class="mx-auto w-24">
+										<img src="dist/img/client-4.png" alt="company logo" height="400" width="142" loading="lazy" />
+									</div>
+									<p class="text-gray-600">
+										<span class="font-serif">"</span> Lorem ipsum dolor sit
+										amet consectetur adipisicing elit. Quaerat repellat
+										perspiciatis excepturi est. Non ipsum iusto aliquam
+										consequatur repellat provident, omnis ut, sapiente
+										voluptates veritatis cum deleniti repudiandae ad
+										doloribus. <span class="font-serif">"</span>
+									</p>
+									<h6 class="text-lg font-semibold leading-none">John Doe</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide !bg-transparent px-6 md:px-0">
+						<div class="rounded-xl bg-white shadow-xl md:mx-auto lg:w-7/12">
+							<div class="grid md:grid-cols-2">
+								<img src="dist/img/card2.webp"
+									class="h-full w-full rounded-t-xl object-cover md:rounded-l-xl md:rounded-tr-none" alt="image"
+									width="640" height="422" loading="lazy" />
+								<div class="mx-auto space-y-6 p-6 text-center sm:p-8">
+									<div class="mx-auto w-24">
+										<img class="mx-auto w-24" src="dist/img/client-3.png" alt="company logo" height="400" width="142"
+											loading="lazy" />
+									</div>
+									<p class="text-gray-600">
+										<span class="font-serif">"</span> Lorem ipsum dolor sit
+										amet consectetur adipisicing elit. Quaerat repellat
+										perspiciatis excepturi est. Non ipsum iusto aliquam
+										consequatur repellat provident, omnis ut, sapiente
+										voluptates veritatis cum deleniti repudiandae ad
+										doloribus. <span class="font-serif">"</span>
+									</p>
+									<h6 class="text-lg font-semibold leading-none">John Doe</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide !bg-transparent px-6 md:px-0">
+						<div class="rounded-xl bg-white shadow-xl md:mx-auto lg:w-7/12">
+							<div class="grid md:grid-cols-2">
+								<img src="dist/img/card3.webp"
+									class="h-full w-full rounded-t-xl object-cover md:rounded-l-xl md:rounded-tr-none" alt="image"
+									width="640" height="422" loading="lazy" />
+								<div class="mx-auto space-y-6 p-6 text-center sm:p-8">
+									<div class="mx-auto w-24">
+										<img class="mx-auto w-24" src="dist/img/client-8.png" alt="company logo" height="400" width="142"
+											loading="lazy" />
+									</div>
+									<p class="text-gray-600">
+										<span class="font-serif">"</span> Lorem ipsum dolor sit
+										amet consectetur adipisicing elit. Quaerat repellat
+										perspiciatis excepturi est. Non ipsum iusto aliquam
+										consequatur repellat provident, omnis ut, sapiente
+										voluptates veritatis cum deleniti repudiandae ad
+										doloribus. <span class="font-serif">"</span>
+									</p>
+									<h6 class="text-lg font-semibold leading-none">John Doe</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination mt-10"></div>
+			</div>
+		</div>
+	</div>
+	<!-- comment1-->
+	<!-- perbandingan harga -->
+
+	<div class="bg-sky-900">
+		<div class="container m-auto px-6 py-20 md:px-12 lg:px-20">
+			<div class="m-auto text-center lg:w-8/12 xl:w-7/12">
+				<h2 class="text-2xl font-bold text-white md:text-4xl">
+					Compare the plans
+				</h2>
+			</div>
+			<div class="m-auto mt-12 xl:w-10/12">
+				<div class="group relative z-10 mx-auto">
+					<div aria-hidden="true"
+						class="absolute top-0 h-full w-full rounded-2xl bg-white shadow-xl transition duration-500 group-hover:scale-105">
+					</div>
+					<div class="relative overflow-auto p-6">
+						<table class="w-full">
+							<thead>
+								<tr>
+									<td class="left-0 border-l border-r border-sky-100 bg-sky-50 p-4 sm:sticky">
+										<span class="font-semibold uppercase text-sky-900">Features</span>
+									</td>
+									<td class="bg-sky-50 p-4">
+										<div class="flex items-center justify-center space-x-3">
+											<img class="h-4 w-4" src="dist/img/free.webp" alt="" />
+											<span class="font-semibold text-sky-900">FREE</span>
+										</div>
+									</td>
+									<td class="bg-sky-50 p-4">
+										<div class="flex items-center justify-center space-x-3">
+											<img class="h-5 w-5" src="dist/img/pro.webp" alt="" />
+											<span class="font-semibold text-sky-900">PRO</span>
+										</div>
+									</td>
+
+									<td class="bg-sky-50 p-4">
+										<div class="flex items-center justify-center space-x-3">
+											<img class="h-5 w-5" src="dist/img/team.webp" alt="" />
+											<span class="font-semibold text-sky-900">TEAM</span>
+										</div>
+									</td>
+
+									<td class="bg-sky-50 py-4">
+										<div class="w-maax flex items-center justify-center space-x-3 px-4">
+											<img class="h-5 w-5" src="dist/img/organization.webp" alt="" />
+											<span class="font-semibold text-sky-900">ORGANIZATION</span>
+										</div>
+									</td>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td class="left-0 border border-sky-100 bg-sky-50 p-4 font-medium text-sky-900 sm:sticky">
+										<span class="block w-max"> Favorite profile </span>
+									</td>
+									<td class="border p-4 text-center text-green-500">
+										&check;
+									</td>
+									<td class="border p-4 text-center text-green-500">
+										&check;
+									</td>
+									<td class="border p-4 text-center text-green-500">
+										&check;
+									</td>
+									<td class="border p-4 text-center text-green-500">
+										&check;
+									</td>
+								</tr>
+								<tr>
+									<td class="left-0 border border-sky-100 bg-sky-50 p-4 font-medium text-sky-900 sm:sticky">
+										<span class="block w-max"> All courses and videos </span>
+									</td>
+									<td class="border text-center text-2xl text-red-500">
+										&times;
+									</td>
+									<td class="border text-center text-2xl text-red-500">
+										&times;
+									</td>
+									<td class="border p-4 text-center text-green-500">
+										&check;
+									</td>
+									<td class="border p-4 text-center text-green-500">
+										&check;
+									</td>
+								</tr>
+								<tr>
+									<td class="left-0 border border-sky-100 bg-sky-50 p-4 font-medium text-sky-900 sm:sticky">
+										<span class="block w-max">
+											Questions & Answers (soon)
+										</span>
+									</td>
+									<td class="border p-4 text-center text-green-500">
+										&check;
+									</td>
+									<td class="border p-4 text-center text-green-500">
+										&check;
+									</td>
+									<td class="border text-center text-2xl text-red-500">
+										&times;
+									</td>
+									<td class="border p-4 text-center text-green-500">
+										&check;
+									</td>
+								</tr>
+								<tr>
+									<td class="left-0 border border-sky-100 bg-sky-50 p-4 font-medium text-sky-900 sm:sticky">
+										<span class="block w-max"> Source files, ePub </span>
+									</td>
+									<td class="border text-center text-2xl text-red-500">
+										&times;
+									</td>
+									<td class="border p-4 text-center text-green-500">
+										&check;
+									</td>
+									<td class="border p-4 text-center text-green-500">
+										&check;
+									</td>
+									<td class="border p-4 text-center text-green-500">
+										&check;
+									</td>
+								</tr>
+								<tr>
+									<td class="left-0 border border-sky-100 bg-sky-50 p-4 font-medium text-sky-900 sm:sticky">
+										<span class="block w-max">
+											UI templates, icons, illustrations
+										</span>
+									</td>
+									<td class="border p-4 text-center text-gray-600">
+										<span class="m-auto block w-max"> Limited to 5 </span>
+									</td>
+									<td class="border p-4 text-center text-green-500">
+										&check;
+									</td>
+									<td class="border p-4 text-center text-green-500">
+										&check;
+									</td>
+									<td class="border p-4 text-center text-green-500">
+										&check;
+									</td>
+								</tr>
+								<tr>
+									<td class="left-0 border border-sky-100 bg-sky-50 p-4 font-medium text-sky-900 sm:sticky">
+										<span class="block w-max"> Premium tutorials </span>
+									</td>
+									<td class="border text-center text-2xl text-red-500">
+										&times;
+									</td>
+									<td class="border p-4 text-center text-green-500">
+										&check;
+									</td>
+									<td class="border p-4 text-center text-green-500">
+										&check;
+									</td>
+									<td class="border p-4 text-center text-green-500">
+										&check;
+									</td>
+								</tr>
+								<tr>
+									<td class="left-0 border border-sky-100 bg-sky-50 p-4 font-medium text-sky-900 sm:sticky">
+										<span class="block w-max"> Commercial use </span>
+									</td>
+									<td class="border text-center text-2xl text-red-500">
+										&times;
+									</td>
+									<td class="border text-center text-2xl text-red-500">
+										&times;
+									</td>
+									<td class="border text-center text-2xl text-red-500">
+										&times;
+									</td>
+									<td class="border p-4 text-center text-green-500">
+										&check;
+									</td>
+								</tr>
+								<tr>
+									<td class="left-0 border border-sky-100 bg-sky-50 p-4 font-medium text-sky-900 sm:sticky">
+										<span class="block w-max">
+											Manage team and see progress
+										</span>
+									</td>
+									<td class="border text-center text-2xl text-red-500">
+										&times;
+									</td>
+									<td class="border text-center text-2xl text-red-500">
+										&times;
+									</td>
+									<td class="border text-center text-2xl text-red-500">
+										&times;
+									</td>
+									<td class="border p-4 text-center text-green-500">
+										&check;
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- akhir perbandingan -->
+	<!-- awal harga -->
+	<div class="bg-gray-100">
+		<div class="container m-auto px-6 py-20 md:px-12 lg:px-20">
+			<div class="m-auto text-center lg:w-7/12">
+				<h2 class="text-2xl font-bold text-sky-900 md:text-4xl">
+					A Tailus Blocks subscription gives you access to our components and
+					more.
+				</h2>
+			</div>
+			<div class="mt-12 grid items-center gap-6 md:grid-cols-2 lg:flex lg:space-x-8">
+				<div class="group relative md:col-span-1 lg:w-[32%]">
+					<div aria-hidden="true"
+						class="absolute top-0 h-full w-full rounded-2xl bg-white shadow-xl transition duration-500 group-hover:scale-105 lg:group-hover:scale-110">
+					</div>
+					<div class="relative space-y-6 p-6">
+						<h3 class="text-center text-3xl font-semibold text-gray-700">
+							Monthly
+						</h3>
+						<div class="relative flex justify-around">
+							<div class="flex">
+								<span class="-ml-6 mt-2 text-3xl font-bold text-cyan-500">$</span>
+								<span class="leading-0 text-8xl font-bold text-gray-800">19</span>
+							</div>
+							<span class="absolute right-9 bottom-2 text-xl font-bold text-cyan-500">/ Month</span>
+						</div>
+						<ul role="list" class="m-auto w-max space-y-4 pb-6 text-gray-600">
+							<li class="space-x-2">
+								<span class="font-semibold text-cyan-500">&check;</span>
+								<span>First premium advantage</span>
+							</li>
+							<li class="space-x-2">
+								<span class="font-semibold text-cyan-500">&check;</span>
+								<span>Second premium advantage</span>
+							</li>
+							<li class="space-x-2">
+								<span class="font-semibold text-cyan-500">&check;</span>
+								<span>Third advantage</span>
+							</li>
+						</ul>
+						<button type="submit" title="Submit"
+							class="block w-full rounded-xl bg-cyan-500 py-3 px-6 text-center transition hover:bg-cyan-600 focus:bg-sky-500 active:bg-cyan-700">
+							<span class="font-semibold text-white"> Start plan </span>
+						</button>
+					</div>
+				</div>
+
+				<div class="group relative row-start-1 md:col-span-2 lg:w-[36%]">
+					<div aria-hidden="true"
+						class="absolute top-0 h-full w-full rounded-2xl bg-white shadow-xl transition duration-500 group-hover:scale-105 lg:group-hover:scale-110">
+					</div>
+					<div class="relative space-y-6 p-6">
+						<h3 class="text-center text-3xl font-semibold text-gray-700">
+							Annual
+						</h3>
+						<div class="overflow-hidden">
+							<div class="-mr-20 flex items-end justify-center">
+								<div class="flex">
+									<span class="-ml-6 mt-2 text-3xl font-bold text-cyan-500">$</span>
+									<span class="leading-0 text-8xl font-bold text-gray-800">15</span>
+								</div>
+								<div class="mb-2">
+									<span class="block text-xl font-bold">.56</span>
+									<span class="block text-xl font-bold text-cyan-500">/ Month</span>
+								</div>
+							</div>
+							<div class="text-center text-2xl font-medium">
+								<span class="text-gray-400 line-through">$234</span>
+								<span class="font-semibold text-gray-700">$190</span>
+							</div>
+							<span class="block text-center text-xs uppercase text-cyan-500">BILLED YEARLY</span>
+							<span
+								class="m-auto mt-4 block w-max rounded-full bg-gradient-to-r from-yellow-300 to-pink-300 px-4 py-1 text-sm font-medium text-yellow-900">1
+								Discount applied</span>
+						</div>
+						<ul role="list" class="m-auto w-max space-y-4 pb-6 text-gray-600">
+							<li class="space-x-2">
+								<span class="font-semibold text-cyan-500">&check;</span>
+								<span>First premium advantage</span>
+							</li>
+							<li class="space-x-2">
+								<span class="font-semibold text-cyan-500">&check;</span>
+								<span>Second premium advantage</span>
+							</li>
+							<li class="space-x-2">
+								<span class="font-semibold text-cyan-500">&check;</span>
+								<span>Third advantage</span>
+							</li>
+							<li class="space-x-2">
+								<span class="font-semibold text-cyan-500">&check;</span>
+								<span>Fourth organizations advantage</span>
+							</li>
+						</ul>
+						<button type="submit" title="Submit"
+							class="block w-full rounded-xl bg-cyan-500 py-3 px-6 text-center transition hover:bg-cyan-600 focus:bg-sky-500 active:bg-cyan-700">
+							<span class="font-semibold text-white"> Start plan </span>
+						</button>
+					</div>
+				</div>
+
+				<div class="group relative md:col-span-1 lg:w-[32%]">
+					<div aria-hidden="true"
+						class="absolute top-0 h-full w-full rounded-2xl bg-white shadow-xl transition duration-500 group-hover:scale-105 lg:group-hover:scale-110">
+					</div>
+					<div class="relative space-y-6 p-6">
+						<h3 class="text-center text-3xl font-semibold text-gray-700">
+							Free
+						</h3>
+						<div class="relative flex justify-around">
+							<div class="flex">
+								<span class="-ml-2 mt-2 text-3xl font-bold text-cyan-500">$</span>
+								<span class="leading-0 text-8xl font-bold text-gray-800">0</span>
+							</div>
+						</div>
+						<ul role="list" class="m-auto w-max space-y-4 pb-6 text-gray-600">
+							<li class="space-x-2">
+								<span class="font-semibold text-cyan-500">&check;</span>
+								<span>First premium advantage</span>
+							</li>
+							<li class="space-x-2">
+								<span class="font-semibold text-cyan-500">&check;</span>
+								<span>Second premium advantage</span>
+							</li>
+							<li class="space-x-2">
+								<span class="font-semibold text-cyan-500">&check;</span>
+								<span>Third advantage</span>
+							</li>
+						</ul>
+						<button type="submit" title="Submit"
+							class="block w-full rounded-xl bg-cyan-100 py-3 px-6 text-center transition hover:bg-cyan-200 focus:bg-cyan-200 active:bg-cyan-300">
+							<span class="font-semibold text-cyan-700">
+								Create free account
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- akhir harga -->
+	<!-- footer -->
+
+	<footer>
+		<div class="bg-gradient-to-b from-gray-900 to-sky-900 pt-8 md:pt-20">
+			<div class="container m-auto space-y-8 px-1 text-gray-400 md:px-12 lg:px-20">
+				<div>
+					<div class="mb-2 items-center justify-between gap-6 py-6 sm:flex md:mb-16 md:space-y-6 md:py-0">
+						<img width="100" height="42" src="dist/img/logo.svg" alt="logo tailus" class="w-32" />
+						<div class="mt-6 flex flex-col-reverse flex-wrap gap-6 sm:mt-0 sm:flex-row sm:items-center">
+							<select name="langage" id="langae" class="w-full rounded-xl bg-gray-900 px-4 py-2 sm:w-max">
+								<option value="en">English</option>
+								<option value="fr">French</option>
+								<option value="sw">Swahili</option>
+							</select>
+							<div class="flex gap-6">
+								<a href="#" target="blank" aria-label="github" class="hover:text-cyan-400">
+									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+										class="bi bi-github" viewBox="0 0 16 16">
+										<path
+											d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+									</svg>
+								</a>
+								<a href="#" target="blank" aria-label="twitter" class="hover:text-cyan-400">
+									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+										class="bi bi-twitter" viewBox="0 0 16 16">
+										<path
+											d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+									</svg>
+								</a>
+								<a href="#" target="blank" aria-label="medium" class="hover:text-cyan-400">
+									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+										class="bi bi-medium" viewBox="0 0 16 16">
+										<path
+											d="M9.025 8c0 2.485-2.02 4.5-4.513 4.5A4.506 4.506 0 0 1 0 8c0-2.486 2.02-4.5 4.512-4.5A4.506 4.506 0 0 1 9.025 8zm4.95 0c0 2.34-1.01 4.236-2.256 4.236-1.246 0-2.256-1.897-2.256-4.236 0-2.34 1.01-4.236 2.256-4.236 1.246 0 2.256 1.897 2.256 4.236zM16 8c0 2.096-.355 3.795-.794 3.795-.438 0-.793-1.7-.793-3.795 0-2.096.355-3.795.794-3.795.438 0 .793 1.699.793 3.795z" />
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="grid grid-cols-2 gap-6 pb-1 sm:grid-cols-3 md:grid-cols-5 lg:grid-rows-5">
+							<div>
+								<h6 class="text-lg font-medium text-white">Categories</h6>
+								<ul class="mt-4 list-inside space-y-4">
+									<li>
+										<a href="#" class="transition hover:text-cyan-400">About</a>
+									</li>
+									<li>
+										<a href="#" class="transition hover:text-cyan-400">Customers</a>
+									</li>
+									<li>
+										<a href="#" class="transition hover:text-cyan-400">Enterprise</a>
+									</li>
+									<li>
+										<a href="#" class="transition hover:text-cyan-400">Partners</a>
+									</li>
+									<li>
+										<a href="#" class="transition hover:text-cyan-400">Jobs</a>
+									</li>
+								</ul>
+							</div>
+							<div>
+								<h6 class="text-lg font-medium text-white">Products</h6>
+								<ul class="mt-4 list-inside space-y-4">
+									<li>
+										<a href="#" class="transition hover:text-cyan-400">About</a>
+									</li>
+									<li>
+										<a href="#" class="transition hover:text-cyan-400">Customers</a>
+									</li>
+									<li>
+										<a href="#" class="transition hover:text-cyan-400">Enterprise</a>
+									</li>
+									<li>
+										<a href="#" class="transition hover:text-cyan-400">Partners</a>
+									</li>
+									<li>
+										<a href="#" class="transition hover:text-cyan-400">Jobs</a>
+									</li>
+								</ul>
+							</div>
+							<div>
+								<h6 class="text-lg font-medium text-white">Ressources</h6>
+								<ul class="mt-4 list-inside space-y-4">
+									<li>
+										<a href="#" class="transition hover:text-cyan-400">About</a>
+									</li>
+									<li>
+										<a href="#" class="transition hover:text-cyan-400">Customers</a>
+									</li>
+									<li>
+										<a href="#" class="transition hover:text-cyan-400">Enterprise</a>
+									</li>
+									<li>
+										<a href="#" class="transition hover:text-cyan-400">Partners</a>
+									</li>
+									<li>
+										<a href="#" class="transition hover:text-cyan-400">Jobs</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-span-2 sm:col-span-3 md:col-span-2">
+								<h6 class="text-lg font-medium text-white">Contact</h6>
+								<ul class="mt-4 list-inside space-y-4">
+									<li>
+										<a href="tel:+243996660436" class="transition hover:text-cyan-400">+243 996 660 436</a>
+									</li>
+									<li>
+										<a href="mailto:meschacirung@gmail.com"
+											class="transition hover:text-cyan-400">contact@tailus.com</a>
+									</li>
+									<li>
+										<form action="">
+											<label for="newsletter" class="text-lg text-white">Subscribe to our newsletter</label>
+											<div class="relative mt-4">
+												<input type="email" name="newsletter" id="newsletter" placeholder="Your email"
+													class="w-full rounded-xl bg-gray-900 bg-opacity-20 px-4 py-3 ring-1 ring-cyan-700 invalid:outline-none invalid:ring-red-400" />
+												<button type="submit" title="Submit"
+													class="absolute right-0 w-max rounded-r-xl bg-cyan-400 py-3 px-6 text-center transition hover:bg-cyan-300 focus:bg-cyan-300 active:bg-cyan-600">
+													<span class="font-semibold text-gray-900">
+														Send
+													</span>
+												</button>
+											</div>
+										</form>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="flex justify-between border-t border-white py-8 text-gray-200">
+							<span>&copy; tailus 2020 - <span id="year"></span></span>
+							<span>All right reserved</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- akhir footer -->
+
+	<script src="dist/js/alpine.js"></script>
+	<script src="dist/js/swiper-bundle.min.js"></script>
+	<script src="dist/js/swiper.js"></script>
+</body>
+
+</html>
